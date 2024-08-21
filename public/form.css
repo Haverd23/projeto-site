@@ -1,0 +1,130 @@
+/* Reset básico */
+body, h1, h2, h3, p, a, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+/* Estilo do header e navegação */
+header {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+}
+nav .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin: 0;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    background: #555;
+}
+
+
+/* Estilo do contêiner do formulário */
+.form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Título do formulário */
+.form-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Estilo dos fieldsets e legends */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo dos rótulos */
+label {
+    font-weight: bold;
+}
+
+/* Estilo dos campos de entrada e seleção */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilo do botão */
+button {
+    background: #0066cc;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #004999;
+}

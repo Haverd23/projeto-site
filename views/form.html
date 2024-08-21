@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Avaliação</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Educação em Inglês</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Formulário</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="form-container">
+            <form id="feedbackForm" action="/submit" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" min="1" max="150" required>
+            
+                    <label for="grade">Série:</label>
+                    <select id="grade" name="grade" required>
+                        <option value="" disabled selected>Selecione a série</option>
+                        <option value="5">5º Ano</option>
+                        <option value="6">6º Ano</option>
+                        <option value="7">7º Ano</option>
+                        <option value="8">8º Ano</option>
+                        <option value="9">9º Ano</option>
+                        <option value="1">1º Ano do Ensino Médio</option>
+                        <option value="2">2º Ano do Ensino Médio</option>
+                        <option value="3">3º Ano do Ensino Médio</option>
+                    </select>
+            
+                    <label for="school">Escola:</label>
+                    <input type="text" id="school" name="school" required>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Avaliação do Ensino de Inglês</legend>
+                    <label for="rating">Avalie o ensino de inglês (1 a 10):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="10" required>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Interesse em Cursos Extra-Curriculares</legend>
+                    <label for="extra-curricular">Deseja fazer cursos extra-curriculares de inglês?</label>
+                    <select id="extra-curricular" name="extra-curricular" required>
+                        <option value="sim">Sim</option>
+                        <option value="não">Não</option>
+                    </select>
+                </fieldset>
+            
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="message"></div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Escola. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
